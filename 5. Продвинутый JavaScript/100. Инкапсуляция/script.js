@@ -94,3 +94,17 @@ const sem = new UserTwo('Sem', 31)
 sem.salary = 356000;
 console.log(sem.salary);
 
+
+let c = 4;
+function addX(x) {
+  return function(n) {
+     return n + x
+  }
+}
+ 
+const addThree = addX(3);
+ 
+let d = addThree(c);
+let res = addThree(c);
+ 
+console.log(res)
